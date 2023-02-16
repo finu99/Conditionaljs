@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student grade</title>
+</head>
+<body>
+    enter the mark<input type="text" id="num">
+    <button onclick="result()">Result</button>
+    <input type="text" id="inp">
+</body>
+<script>
+    function result(){
+        var marks=Number(document.getElementById("num").value);
+        // var grade=document.getElementById("inp").value;
+        var grade;
+    if (marks>90)
+    {
+        grade="A";
+    }
+    else if(marks>80)
+    {
+        grade="B";
+    }
+    else if(marks>70){
+        grade="c";
+    }
+    else{
+       grade="failed";
+    }
+    document.getElementById("inp").value=grade;
+}
+</script>
+</html>
